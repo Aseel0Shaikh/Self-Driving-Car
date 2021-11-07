@@ -92,5 +92,5 @@ $x = x' + K.y$
 
 $P = (I- KH_{j})P$
 
-Then the we update the estimate and the uncirtinity.
+Then we update the estimate and the uncirtinity.
 
