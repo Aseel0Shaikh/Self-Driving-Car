@@ -20,7 +20,7 @@ I didn't know how to use ROS to implement that since it was my first time with R
 
 The main difference from EKF is that in EKF we take only one point i.e. mean and approximate, while the unscented Kalman filter (UKF) uses a deterministic sampling technique known as the unscented transformation (UT) to pick a minimal set of sample points (called sigma points) around the mean. The sigma points are then propagated through the nonlinear functions, from which a new mean and covariance estimate are then formed.
 
-### In what cases will you prefer an EKF over a UKF.
+### In what cases will you prefer an EKF over a UKF?
 
 The unscented Kalman filter has a slightly better performance than the extended Kalman filter when used as a fusion method in a positioning module of an integrated navigation information system.
 
