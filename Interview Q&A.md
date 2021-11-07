@@ -5,22 +5,27 @@
 [image2]: ./p2.png
 
 ## Question 1
-### Explain a recent project you've worked on. What difficulties did you run into this project that you did not expect, and how did you solve them?
+### Explain a recent project you've worked on.
 
 System Integration.
 In this project we used ROS nodes to implement core functionality of the autonomous vehicle system, including traffic light detection, control, and waypoint following.
-I didn't know how to use ROS to implement that since it was my first time with ROS, but the lessons provided by Udacity and the following system architecture diagram helped overcome that.
 ![alt text][image1]
+
+### What difficulties did you run into this project that you did not expect, and how did you solve them?
+
+I didn't know how to use ROS to implement that since it was my first time with ROS, but the lessons provided by Udacity and the following system architecture diagram helped overcome that.
 
 ## Question 2
 ### What is the difference between an Extended Kalman Filter and an Unscented Kalman Filter? In what situations would there be larger differences between the two approaches?
 
 The main difference from EKF is that in EKF we take only one point i.e. mean and approximate, while the unscented Kalman filter (UKF) uses a deterministic sampling technique known as the unscented transformation (UT) to pick a minimal set of sample points (called sigma points) around the mean. The sigma points are then propagated through the nonlinear functions, from which a new mean and covariance estimate are then formed.
+
+### In what cases will you prefer an EKF over a UKF.
+
 The unscented Kalman filter has a slightly better performance than the extended Kalman filter when used as a fusion method in a positioning module of an integrated navigation information system.
 
-
 ## Question 3
-### What are some of the advantages & disadvantages of cameras, lidar and radar? What combination of these (and other sensors) would you use to ensure appropriate and accurate perception of the environment?
+### What are some of the advantages & disadvantages of cameras, lidar and radar?
 
 #### Camera
 
@@ -48,6 +53,8 @@ LiDAR has a detection range of as far as 100 meters away with a calculation erro
 
 Cons:
 LiDAR requires a significant amount of computing power compared to camera and radar since it calculates hundreds of thousands of points every second and transforms them into actions to provide an accurate 3D model of the environment. It also makes LiDAR prone to system malfunctions and software glitches. Due to the sophistication of the software and the computing resources needed, the price to implement a set of LiDAR sensors is the highest among the three.
+
+### What combination of these (and other sensors) would you use to ensure appropriate and accurate perception of the environment?
 
 To ensure appropriate and accurate perception of the environment I would use a mix of at least two of the three sensors to complement each other and outweigh their weaknesses.
 
