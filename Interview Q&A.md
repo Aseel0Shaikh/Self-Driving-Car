@@ -94,3 +94,6 @@ $P = (I- KH_{j})P$
 
 Then we update the estimate and the uncirtinity.
 
+### How can EKF be improvement?
+
+One way to improving extended Kalman filter performance is by using the iterated extended Kalman filter. It improves the linearization of the extended Kalman filter by recursively modifying the centre point of the Taylor expansion. This reduces the linearization error at the cost of increased computational requirements.
